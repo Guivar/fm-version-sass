@@ -768,7 +768,7 @@ body { /* Estilo de fuente para todo*/
     .nav-input{ /*ocultar el check box del imput*/
         display:none;
     }
-    .navegacion{ /*Estilos a la ventana del menu navegacion*/
+    .navegacion{ /*Estilos a la barra del menu de navegacion*/
         width: 100%;
         height: auto;
         display: flex;

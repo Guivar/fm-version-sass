@@ -1,6 +1,10 @@
-/******    INICIO DE CODIGO DE SCSS A CSS    ******/
+/******                                       INICIO DE CODIGO DE SCSS A CSS                                      ******/
 
 //Primera linea de SCSS importacion de las demas partes 
+@import "mapa";
 @import "reseteo";
 @import "estructura";
+@import "estructura-tab";
+@import "estructura-desk";
+
 
