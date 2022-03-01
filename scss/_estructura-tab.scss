@@ -266,19 +266,23 @@
     .cuerpo-contacto{ /*Posicionamiento y justificacion del cuerpo de*/
         margin-top: $m-top-md;
     }
+    .cont-contacto2{
+        padding: 15px;
+    }
     .formcontacto{/* Estilos al Form de contacto */
         margin: 1em auto;
         border-radius: 5px;
-        padding: 10%;
+        padding: 5%;
         width: 90%;
         text-align: left;
         line-height: 20px;
         background: $fondo6;
         color: $fondo5;
-        .descripcion2{ /*Descripcion del formulario de contacto*/
-            width: 100%;
-            height: 50px;
-        }
+        font-size: 1em;
+    }
+    .descripcion2{ /*Descripcion del formulario de contacto*/
+        width: 100%;
+        height: 50px;
     }
 
     /****************--------------- ESTILOS PARA OPINIONES-------------------------------************/
@@ -328,22 +332,23 @@
         font-size: 1em;
         font-weight: bolder;
         border-radius: 7px;
-        .inform{ /*Estilos a los input del formulario*/
-            line-height: 20px;
-            height: 2em;
-            width: 100%;
-        }
-        .descripcion1{ /*Estilos a la descripcion opiniones*/
-            width: 100%;
-            height: 4em;
-        }   
-        .bottons{ /* Estilos al boton enviar Form */
-            width: 100%;
-            height: 2em;
-            color: $color2;
-            background: $fondo5;
-            cursor: pointer;
-    
-        } 
+       
     }
+    .inform{ /*Estilos a los input del formulario*/
+        line-height: 20px;
+        height: 2em;
+        width: 100%;
+    }
+    .descripcion1{ /*Estilos a la descripcion opiniones*/
+        width: 100%;
+        height: 4em;
+    }   
+    .bottons{ /* Estilos al boton enviar Form */
+        width: 100%;
+        height: 2em;
+        color: $color2;
+        background: $fondo5;
+        cursor: pointer;
+
+    } 
 }
