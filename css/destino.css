@@ -306,7 +306,10 @@ body {
   .cuerpo-opiniones {
     /*Justificaciones*/
     margin-top: 4.1em;
-    width: 100%; }
+    width: 100%;
+    background-image: url(../media/street-4.jpg);
+    background-position: center center;
+    background-size: cover; }
     .cuerpo-opiniones .caja-opiniones {
       /* Justificaciones al contenido - alineado de box opiniones*/
       display: flex;
@@ -314,57 +317,55 @@ body {
       justify-content: space-around;
       align-items: center;
       padding: 20px;
-      gap: 20px;
-      background-image: url(../media/street-4.jpg);
-      background-position: center center;
-      background-size: cover; }
-      .cuerpo-opiniones .caja-opiniones .box-opinion {
-        /*Estilos a cada opinion*/
-        background: rgba(255, 255, 255, 0.5);
-        padding: 10px;
-        border-radius: 10px; }
-        .cuerpo-opiniones .caja-opiniones .box-opinion h3 {
-          /*Estilos a name de las opiniones*/
-          font-size: 1em; }
-        .cuerpo-opiniones .caja-opiniones .box-opinion p {
-          /*Estilos al contenido de parrafos opiniones*/
-          font-size: 1em;
-          font-family: 'Quicksand', sans-serif; }
-  legend {
-    /*Estilos al legend del formulario de opiniones*/
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 16px; }
-  .contenedor-formulario {
-    /* Estilos al formulario de Opiniones*/
-    padding: 1em;
-    margin: 2px;
-    height: 10%;
-    width: 100%;
-    text-align: left;
-    background: #999;
-    color: black;
-    font-size: 1em;
-    font-weight: bolder;
-    border-radius: 7px; }
-  .inform {
-    /*Estilos a los input del formulario*/
-    line-height: 20px;
-    height: 2em;
-    width: 100%; }
-  .descripcion1 {
-    /*Estilos a la descripcion opiniones*/
-    width: 100%;
-    height: 4em; }
-  .bottons {
-    /* Estilos al boton enviar Form */
-    width: 100%;
-    height: 2em;
-    color: #fff;
-    background: #242424;
-    cursor: pointer; } }
+      gap: 20px; }
+    .cuerpo-opiniones .box-opinion {
+      /*Estilos a cada opinion*/
+      background: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      border-radius: 10px; }
+      .cuerpo-opiniones .box-opinion h3 {
+        /*Estilos a name de las opiniones*/
+        font-size: 1em; }
+      .cuerpo-opiniones .box-opinion p {
+        /*Estilos al contenido de parrafos opiniones*/
+        font-size: 1em;
+        font-family: 'Quicksand', sans-serif; }
+    .cuerpo-opiniones .formulario-opiniones {
+      padding: 5%; }
+    .cuerpo-opiniones legend {
+      /*Estilos al legend del formulario de opiniones*/
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 16px; }
+    .cuerpo-opiniones .contenedor-formulario {
+      /* Estilos al formulario de Opiniones*/
+      padding: 1em;
+      margin: 2.5%;
+      height: 10%;
+      width: 95%;
+      text-align: left;
+      color: black;
+      font-size: 1em;
+      font-weight: bolder;
+      border-radius: 7px; }
+    .cuerpo-opiniones .inform {
+      /*Estilos a los input del formulario*/
+      line-height: 20px;
+      height: 2em;
+      width: 100%; }
+    .cuerpo-opiniones .descripcion1 {
+      /*Estilos a la descripcion opiniones*/
+      width: 100%;
+      height: 4em; }
+    .cuerpo-opiniones .bottons {
+      /* Estilos al boton enviar Form */
+      width: 100%;
+      height: 2em;
+      color: #fff;
+      background: #242424;
+      cursor: pointer; } }
 
 /***** MAPAS ****/
 .facebook:hover {
@@ -569,7 +570,8 @@ body {
     height: 100vh; }
   .contParrafoAbout {
     /*Estilo al contendor de los parrafos - posicionamiento de sus padding*/
-    padding: 0px 15px 10px 20px; }
+    padding: 0px 15px 10px 20px;
+    margin-left: 60%; }
   .contParrafoAbout p {
     /*Estilo a los parrafos y su fondo*/
     background: rgba(0, 0, 0, 0.5);
@@ -674,7 +676,10 @@ body {
   .cuerpo-opiniones {
     /*Justificaciones*/
     margin-top: 4.1em;
-    width: 100%; }
+    width: 100%;
+    background-image: url(../media/street-4.jpg);
+    background-position: center center;
+    background-size: cover; }
     .cuerpo-opiniones .caja-opiniones {
       /* Justificaciones al contenido - alineado de box opiniones*/
       display: flex;
@@ -682,10 +687,7 @@ body {
       justify-content: space-around;
       align-items: center;
       padding: 20px;
-      gap: 20px;
-      background-image: url(../media/street-4.jpg);
-      background-position: center center;
-      background-size: cover; }
+      gap: 20px; }
       .cuerpo-opiniones .caja-opiniones .box-opinion {
         /*Estilos a cada opinion*/
         background: rgba(255, 255, 255, 0.5);
@@ -698,41 +700,42 @@ body {
           /*Estilos al contenido de parrafos opiniones*/
           font-size: 1em;
           font-family: 'Quicksand', sans-serif; }
-  legend {
-    /*Estilos al legend del formulario de opiniones*/
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 16px; }
-  .contenedor-formulario {
-    /* Estilos al formulario de Opiniones*/
-    padding: 1em;
-    margin: 2px;
-    height: 10%;
-    width: 100%;
-    text-align: left;
-    background: #999;
-    color: black;
-    font-size: 1em;
-    font-weight: bolder;
-    border-radius: 7px; }
-  .inform {
-    /*Estilos a los input del formulario*/
-    line-height: 20px;
-    height: 2em;
-    width: 100%; }
-  .descripcion1 {
-    /*Estilos a la descripcion opiniones*/
-    width: 100%;
-    height: 4em; }
-  .bottons {
-    /* Estilos al boton enviar Form */
-    width: 100%;
-    height: 2em;
-    color: #fff;
-    background: #242424;
-    cursor: pointer; } }
+    .cuerpo-opiniones .formulario-opiniones {
+      padding: 5%; }
+    .cuerpo-opiniones legend {
+      /*Estilos al legend del formulario de opiniones*/
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 16px; }
+    .cuerpo-opiniones .contenedor-formulario {
+      /* Estilos al formulario de Opiniones*/
+      padding: 1em;
+      margin: 5%;
+      height: 10%;
+      width: 90%;
+      text-align: left;
+      color: black;
+      font-size: 1em;
+      font-weight: bolder;
+      border-radius: 7px; }
+    .cuerpo-opiniones .inform {
+      /*Estilos a los input del formulario*/
+      line-height: 20px;
+      height: 2em;
+      width: 100%; }
+    .cuerpo-opiniones .descripcion1 {
+      /*Estilos a la descripcion opiniones*/
+      width: 100%;
+      height: 4em; }
+    .cuerpo-opiniones .bottons {
+      /* Estilos al boton enviar Form */
+      width: 100%;
+      height: 2em;
+      color: #fff;
+      background: #242424;
+      cursor: pointer; } }
 
 /***** MAPAS ****/
 .facebook:hover {
@@ -940,7 +943,8 @@ body {
     height: 100vh; }
   .contParrafoAbout {
     /*Estilo al contendor de los parrafos - posicionamiento de sus padding*/
-    padding: 0px 15px 30px 20px; }
+    padding: 0px 15px 30px 20px;
+    margin-left: 60%; }
   .contParrafoAbout p {
     /*Estilo a los parrafos y su fondo*/
     background: rgba(0, 0, 0, 0.5);

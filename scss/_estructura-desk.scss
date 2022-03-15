@@ -174,7 +174,8 @@
        height: 100vh;
    }
    .contParrafoAbout{ /*Estilo al contendor de los parrafos - posicionamiento de sus padding*/
-       padding:  0px 15px 30px 20px;  
+       padding:  0px 15px 30px 20px;
+       margin-left: 60%;  
    }
    .contParrafoAbout p{ /*Estilo a los parrafos y su fondo*/
        background: rgba(0,0,0,0.5);

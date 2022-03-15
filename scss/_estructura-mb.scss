@@ -22,6 +22,7 @@
         width: 100%;
         top: 0;
         left: 0;
+        
         @include box-navegacion (space-between, 1.2em, 4em);
         .logo-navegacion{ /*estilos al logo de la marca*/
             width: $w-logo-sm;
@@ -279,6 +280,9 @@
     .cuerpo-opiniones{ /*Justificaciones*/
         margin-top: $m-top-sm;
         width: 100%;
+        background-image: url(../media/street-4.jpg);
+        background-position: center center;
+        background-size: cover;
         .caja-opiniones{ /* Justificaciones al contenido - alineado de box opiniones*/
             display: flex;
             flex-direction: column;
@@ -286,423 +290,58 @@
             align-items: center;
             padding: 20px;
             gap: 20px;
-            background-image: url(../media/street-4.jpg);
-            background-position: center center;
-            background-size: cover;
-            .box-opinion{ /*Estilos a cada opinion*/
-                background: rgba(255, 255, 255, 0.5);
-                padding: 10px;
-                border-radius: 10px;
-                h3{ /*Estilos a name de las opiniones*/
-                    font-size: 1em;
-                }
-                p { /*Estilos al contenido de parrafos opiniones*/
-                    font-size: 1em;
-                    font-family: 'Quicksand', sans-serif;
-                }
-            }
-            
         }
+        .box-opinion{ /*Estilos a cada opinion*/
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            h3{ /*Estilos a name de las opiniones*/
+                font-size: 1em;
+            }
+            p { /*Estilos al contenido de parrafos opiniones*/
+                font-size: 1em;
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+        .formulario-opiniones{
+            padding: 5%;
+        }
+        legend{ /*Estilos al legend del formulario de opiniones*/
+            color: $color1;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+        .contenedor-formulario{/* Estilos al formulario de Opiniones*/
+            padding: 1em;
+            margin: 2.5%;
+            height: 10%;
+            width: 95%;
+            text-align: left;
+            color: $color1;
+            font-size: 1em;
+            font-weight: bolder;
+            border-radius: 7px;
+        }
+        .inform{ /*Estilos a los input del formulario*/
+            line-height: 20px;
+            height: 2em;
+            width: 100%;
+        }
+        .descripcion1{ /*Estilos a la descripcion opiniones*/
+            width: 100%;
+            height: 4em;
+        }   
+        .bottons{ /* Estilos al boton enviar Form */
+            width: 100%;
+            height: 2em;
+            color: $color2;
+            background: $fondo5;
+            cursor: pointer;
+    
+        } 
     }
-    legend{ /*Estilos al legend del formulario de opiniones*/
-        color: $color1;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 10px;
-        font-size: 16px;
-    }
-    .contenedor-formulario{/* Estilos al formulario de Opiniones*/
-        padding: 1em;
-        margin: 2px;
-        height: 10%;
-        width: 100%;
-        text-align: left;
-        background: $fondo6;
-        color: $color1;
-        font-size: 1em;
-        font-weight: bolder;
-        border-radius: 7px;
-    }
-    .inform{ /*Estilos a los input del formulario*/
-        line-height: 20px;
-        height: 2em;
-        width: 100%;
-    }
-    .descripcion1{ /*Estilos a la descripcion opiniones*/
-        width: 100%;
-        height: 4em;
-    }   
-    .bottons{ /* Estilos al boton enviar Form */
-        width: 100%;
-        height: 2em;
-        color: $color2;
-        background: $fondo5;
-        cursor: pointer;
-
-    } 
+   
 }
 
-// /*-------------->                      ESTILOS GENERALES                    <---------------************/
-
-// /*     <-------------Layout y estilos en la barra de navegacion-encabezado--------->   */
-
-
-// @include media-system(xs){
-//     .menu-navegacion{
-//         display: flex;
-//         align-items: center;
-//         background: $fondo1;
-//         position: fixed;
-//         width: 100%;
-//         top: 0;
-//         left: 0;
-//         @include box-navegacion(space-between, 1.2em, 4em); // Estructura para Mobile
-
-//         .logo-navegacion{ /*estilos al logo de la marca*/
-//             width: $ancho-logo-xs;
-//             cursor: pointer;
-//         }
-//         h1{ /*estilo al titulo de la marca*/ 
-//             display:none;
-//         }
-//         .nav-label { /*Estilos al menu hamburguesa*/
-//             display: block;
-//             font-size: $fs-nav-label-xs;
-//             color: white;
-//             cursor: pointer;
-//         }
-//         .nav-input{ /*ocultar el check box del imput*/
-//             display:none;
-//             &:checked + .navegacion { /*Busqueda y mostrar menu navegacion*/
-//                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-//             }
-//         }
-//         .navegacion{ /*Estilos a la ventana del menu navegacion*/
-//             position:absolute;
-//             top:4em;
-//             left: 40%;
-//             width: 60%;
-//             height: 100vh;
-//             background-color: rgba(1, 1, 1,0.9);
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: flex-start;
-//             align-items: center;
-//             clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-//             transition: 0.3s ease-in-out;
-//             li { /*Estilos a cada enlace de lanavegacion lista*/
-//                 list-style: none;
-//                 width: 100%;
-//                 border-bottom: solid 1px lightgray;
-//                 text-align: center;
-//                 &:hover { /*Efecto del cursor*/
-//                     background: whitesmoke;
-//                     transition: 0.2s;
-//                 }
-//                 .enlaceNavegacion { /*Estilos a cada enlace de lanavegacion*/
-//                     text-decoration: none;
-//                     text-transform: uppercase;
-//                     font-size: $fs-enlacenavegacion-xs;
-//                     cursor: pointer;
-//                     color: lightgray;
-//                     letter-spacing: 2px;
-//                     font-family: $fuente2;
-//                     line-height: 60px;
-//                     &:hover { /*efecto del cursor*/
-//                         color: black;
-//                         font-weight: bolder;
-//                     }
-//                 }   
-//             }
-//         }   
-//     }
-// }
-
-// @include media-system(md){
-//     .menu-navegacion{
-//         display: flex;
-//         align-items: center;
-//         background: $fondo1;
-//         position: fixed;
-//         width: 100%;
-//         top: 0;
-//         left: 0;
-//         @include box-navegacion(space-between, 1.8em, 5em); // Estructura para Tablet
-//         .logo-marca { /*Estilos y justificaciones a los elementos logo y marca*/
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: flex-start;
-//             align-items: center;
-//             .link-logo-navegacion{ /*Estilos al enlace a del logo y la marca*/
-//                 text-decoration: none;
-//                 .logo-navegacion{ /*estilos al logo de la marca*/
-//                     width: $ancho-logo-xs;
-//                     cursor: pointer;
-//                 }
-//                 h1{ /*estilo al titulo de la marca*/
-//                     display: block; 
-//                     font-family: $fuente1;
-//                     font-size: 1em;
-//                     text-decoration: none;
-//                     text-transform: uppercase;
-//                     color: $color2;
-//                     letter-spacing: 2px;
-//                     cursor: pointer;
-//                 }
-//             }
-//         }
-//         .nav-label { /*Estilos al menu hamburguesa*/
-//             font-size: $fs-nav-label-md;
-//             color: white;
-//             cursor: pointer;
-//             display: block;
-//         }
-//         .nav-input{ /*ocultar el check box del imput*/
-//             display:none;
-//         }
-//         .nav-input{ /*ocultar el check box del imput*/
-//             display:none;
-//             &:checked + .navegacion { /*Busqueda y mostrar menu navegacion*/
-//                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-//             }
-//         }
-//         .navegacion{ /*Estilos a la ventana del menu navegacion*/
-//             position:absolute;
-//             top:5em;
-//             left: 40%;
-//             width: 60%;
-//             height: 100vh;
-//             background-color: rgba(1, 1, 1,0.9);
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: flex-start;
-//             align-items: center;
-//             clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-//             transition: 0.3s ease-in-out;
-//             li { /*Estilos a cada enlace de lanavegacion lista*/
-//                 list-style: none;
-//                 width: 100%;
-//                 border-bottom: solid 1px lightgray;
-//                 text-align: center;
-//                 &:hover { /*Efecto del cursor*/
-//                     background: whitesmoke;
-//                     transition: 0.2s;
-//                 }
-//                 .enlaceNavegacion { /*Estilos a cada enlace de lanavegacion*/
-//                     text-decoration: none;
-//                     text-transform: uppercase;
-//                     font-size: $fs-enlacenavegacion-xs;
-//                     cursor: pointer;
-//                     color: lightgray;
-//                     letter-spacing: 2px;
-//                     font-family: $fuente2;
-//                     line-height: 60px;
-//                     &:hover { /*efecto del cursor*/
-//                         color: black;
-//                         font-weight: bolder;
-//                     }
-//                 }
-//             }
-//         }
-
-//     }
-// }
-
-
-// @include media-system(lg){
-//     .menu-navegacion{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         background: $fondo1;
-//         position: fixed;
-//         width: 100%;
-//         top: 0;
-//         left: 0;
-        
-//         @include box-navegacion(center, 1.5em, 7em); // Estructura para Desktop   
-//         .logo-marca { /*Estilos y justificaciones a los elementos logo y marca*/
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-//             .link-logo-navegacion{ /*Estilos al enlace a del logo y la marca*/
-//                 text-decoration: none;
-//                 .logo-navegacion{ /*estilos al logo de la marca*/
-//                     width: $ancho-logo-lg;
-//                     cursor: pointer;
-//                 }
-//                 h1{ /*estilo al titulo de la marca*/ 
-//                     display: block;
-//                     font-family: $fuente1;
-//                     font-size: 1.2em;
-//                     text-decoration: none;
-//                     text-transform: uppercase;
-//                     color: $color2;
-//                     letter-spacing: 2px;
-//                     cursor: pointer;
-//                 }
-//             }
-//         }
-//         .nav-label { /*Estilos al menu hamburguesa*/
-//             display: none;
-//         }
-//         .nav-input{ /*ocultar el check box del imput*/
-//             display:none;
-//         }
-//         .navegacion{ /*Estilos al menu navegacion*/
-//             width: 100%;
-//             height: auto;
-//             display: flex;
-//             justify-content: space-between;
-//             align-items: center;
-//             line-height: 30px;
-//             li { /*Estilos a cada enlace de la navegacion lista*/
-//                 list-style: none;
-//                 width: 100%;
-//                 text-align: center;
-//                 padding: 0 25px 0 25px;
-//                 border-radius: 2px;
-//                 &:hover { /*Efecto del cursor*/
-//                     background: $fondo3;
-//                     transition: 0.2s;
-//                 }
-//                 .enlaceNavegacion { /*Estilos a cada enlace de la navegacion*/
-//                     text-decoration: none;
-//                     text-transform: uppercase;
-//                     font-weight: bold;
-//                     font-size: $fs-enlacenavegacion-lg;
-//                     cursor: pointer;
-//                     color: $color2;
-//                     letter-spacing: 1px;
-//                     font-family: $fuente2;
-//                     line-height: 5px;
-//                     &:hover { /*efecto del cursor*/
-//                         color: $color1;
-//                         font-weight: bolder;
-//                     }
-//                 }
-//             }
-//         }
-//     }   
-// }
-
-// h2{ /*Estilos a los subtitulos*/
-//     background: $fondo5;
-//     color: $color2;
-//     width: 100%;
-//     min-width: 20rem;
-//     font-family: $fuente2;
-//     @include media-system(xs){
-//         height: 2em;
-//         padding: 0.4em 0;
-//         font-size: 0.8em;
-//     }
-//     @include media-system(md){
-//         height: 2em;
-//         padding: 0.5em 1.2em;
-//         font-size: 0.9em;
-//     }
-//     @include media-system(lg){
-//         height: 2.3em;
-//         padding: 0.5em 1.2em;
-//         font-size: 1.2em;
-//     }
-
-// }
-// /*                    <-------------Layout y estilos en el footer--------------->                        */
-// footer { /*Justificaciones al contenedor*/
-//     background: $fondo4;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 5px 0px;
-//     gap: 10px;
-
-//     .botones-rrss {
-//         a {
-//             @include btn-rrss; /*Estilos a los botones de RRSS*/
-//             @include media-system(xs){
-//                 height: $h-btnrrss-xs;
-//                 width: $w-btnrrss-xs;
-//                 font-size: $fs-rrss-xs;
-//             }
-//             @include media-system(md){
-//                 height: $h-btnrrss-md;
-//                 width: $w-btnrrss-md;
-//                 font-size: $fs-rrss-md;
-//             }
-//             @include media-system(lg){
-//                 height: $h-btnrrss-lg;
-//                 width: $w-btnrrss-lg;
-//                 font-size: $fs-rrss-lg;
-//             }
-
-//         }
-//         .facebook{
-//             &:hover { /*Estilos animados al boton Face*/
-//                 transform: scale(1.3);
-//                 background-color: $color-facebook;
-//             }
-//         }
-//         .whatsapp:hover { /*Estilos animados al boton WPP*/
-//             @extend.facebook;
-//             background-color: $color-whatsapp;
-//         }
-//         .instagram:hover { /*Estilos animados al boton Instagram*/
-//             @extend.facebook;
-//             background-color: $color-instagram;
-//         }
-//     }
-
-//     h4 { /*Estilos al texto del pie de pagina*/
-//         color: $color2;
-//         font-size: 0.9em;
-//         word-spacing: 3px;
-//         font-family: $fuente2;
-//         font-weight:lighter;
-
-//         @include media-system(xs){
-//             font-size: $fs-h4-xs; 
-//         }
-//         @include media-system(md){
-//             font-size: $fs-h4-md; 
-//         }
-//         @include media-system(lg){
-//             font-size: $fs-h4-lg; 
-//         }
-//     }
-        
-// }
-
-// /***************------------------------ ESTILOS PARA EL INDEX-------------------------------************/
-// /*--------------------- Estilos en cuerpo de Index -----------------*/
-// .tituloScroll { /*Estilos a cada subtitulo*/
-//     height: 2em;
-//     background-color: $fondo5;
-//     color: $color2;
-//     text-transform: uppercase;
-//     text-align: center;
-//     font-size: 0.9em;
-//     padding: calc((2em - 1em)/2);
-//     font-family: 'Nanum Gothic', sans-serif;
-// }
-// .contenedorGeneralIndex{ /*Justificaciones y layout del cuerpo index*/
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     justify-content: center;
-//     column-gap: 5px;
-//     margin-top: 7.1em;
-// }
-// .imagenIndex{ /*Justificaciones de tamano a cada imagen del INDEX*/
-//     width: 100%;
-//     max-width: 340px;
-//     height: auto;
-//     padding-top: 2px;
-// }
-// .columnafotos{ /*Justificaciones al contenido de imagenes*/
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-evenly;
-// }
